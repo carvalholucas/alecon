@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: 
+}
+
+@layer components {
+  .t-grid-4 {
+    @apply grid grid-cols-1 gap-4 h-full md:grid-cols-4;
+    /* @apply grid grid-cols-1 auto-rows-min gap-4 py-6 col-start-2 col-span-1 md:grid-cols-4; */
+  }
+
+  .t-grid-6 {
+    @apply grid grid-cols-1 gap-4 h-full md:grid-cols-6;
+  }
+
+  .t-grid-6 {
+    @apply grid grid-cols-1 gap-8 py-16 md:grid-cols-6;
+  }
+}
